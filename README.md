@@ -5,7 +5,7 @@
 ---
 
 ## 📺 Demo Video
-**Watch the system in action:** [Project Demo Link Here](https://github.com/MImahin/UIU-Hack-Day-2025)
+**Watch the system in action:** [Project Demo Link Here](https://drive.google.com/drive/folders/1ejWwTqwOR-5t9CIeEpr5XXfFy83xghAT)
 
 > **✨ Special Note:** Almost every line of code, the architectural modularity, and the high-frequency acoustic logic in this project was generated via **Vibe Coding** in collaboration with **Gemini**.
 
