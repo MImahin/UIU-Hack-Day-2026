@@ -1,0 +1,119 @@
+/* --- ENCODE PAGE STYLES --- */
+.encode-wrapper {
+    max-width: 700px;
+    margin: 20px auto;
+    background: #050505;
+    border: 1px solid #1a1a1a;
+    padding: 50px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+/* Header Section */
+.terminal-header {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #1a1a1a;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    color: var(--neon);
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.status-bar {
+    font-size: 0.7rem;
+    color: #444;
+}
+
+.status-node {
+    margin-left: 15px;
+}
+
+/* Input Styling */
+.input-group {
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.75rem;
+    color: #555;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+input[type="text"], 
+textarea {
+    width: 100%;
+    background: #080808;
+    border: 1px solid #1a1a1a;
+    padding: 15px;
+    color: var(--neon);
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    resize: none;
+}
+
+input[type="text"]:focus, 
+textarea:focus {
+    outline: none;
+    background: #0a0a0c;
+    border-color: var(--deep);
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.05);
+}
+
+/* Animated Border Line */
+.input-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background: var(--neon);
+    transition: 0.4s ease;
+}
+
+input:focus + .input-line,
+textarea:focus + .input-line {
+    width: 100%;
+}
+
+/* Button Styling */
+.execute-btn {
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    border: 1px solid var(--neon);
+    color: var(--neon);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.execute-btn:hover {
+    background: var(--neon);
+    color: #000;
+    box-shadow: 0 0 30px var(--neon);
+}
+
+.error-msg {
+    margin-top: 20px;
+    color: #ff4444;
+    font-size: 0.8rem;
+    text-align: center;
+    border: 1px dashed #ff4444;
+    padding: 10px;
+}

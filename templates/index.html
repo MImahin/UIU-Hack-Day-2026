@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block page_css %}<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">{% endblock %}
+
+{% block content %}
+<div class="hero-container">
+    <section class="manifesto">
+        <p class="manifesto-text">
+            Throughout history, the most successful secrets haven't just been encrypted—they’ve been invisible. 
+            From ancient scytales to frequency hopping, the goal has always been to let messages slip past watchful eyes. 
+            <span class="highlight">GhostVector</span> is the modern evolution of this concept. 
+            We don't just lock the door; we hide the room.
+        </p>
+    </section>
+
+    <div class="glitch-box">
+        <h2 class="section-title">SELECT_OPERATION_VECTOR</h2>
+        <div class="mode-selector">
+            <a href="/encode" class="mode-card">
+                <div class="icon">🔒</div>
+                <h3>ENCODE</h3>
+                <p>Fragment and hide data across 3 vectors.</p>
+                <div class="card-edge"></div>
+            </a>
+            <a href="/decode" class="mode-card">
+                <div class="icon">🔓</div>
+                <h3>DECODE</h3>
+                <p>Reassemble secret from fragments.</p>
+                <div class="card-edge"></div>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block page_css %}<link rel="stylesheet" href="{{ url_for('static', filename='decode.css') }}">{% endblock %}
+
+{% block content %}
+<div class="decode-wrapper">
+    <div class="terminal-header">
+        <h2 class="title">REASSEMBLY_INITIATED</h2>
+        <div class="status-bar">
+            <span class="status-node">VECTOR_COUNT: 03</span>
+            <span class="status-node">MODE: SPLIT_MERGE</span>
+        </div>
+    </div>
+
+    <p class="instruction-text">
+        UPLOAD_ALL_REQUIRED_VECTORS_TO_RECONSTRUCT_DATA_PAYLOAD
+    </p>
+    
+    <form method="POST" enctype="multipart/form-data" class="decode-form">
+        <div class="input-grid">
+            <div class="upload-slot">
+                <label>VECTOR_01: VISUAL_CARRIER (.PNG)</label>
+                <input type="file" name="img_file" accept=".png">
+            </div>
+
+            <div class="upload-slot">
+                <label>VECTOR_02: ACOUSTIC_CARRIER (.WAV)</label>
+                <input type="file" name="aud_file" accept=".wav">
+            </div>
+
+            <div class="upload-slot">
+                <label>VECTOR_03: ARCHIVE_CARRIER (.ZIP)</label>
+                <input type="file" name="zip_file" accept=".zip">
+            </div>
+        </div>
+
+        <button type="submit" class="execute-btn">EXECUTE_REASSEMBLY</button>
+    </form>
+
+    {% if merged_result %}
+    <div class="result-container">
+        <div class="output-header">DECRYPTED_PAYLOAD_SUCCESS</div>
+        
+        <div class="secret-display">
+            {{ merged_result }}
+        </div>
+
+        <div class="breakdown-section">
+            <h4 class="breakdown-title">FRAGMENT_RECONSTRUCTION_LOG</h4>
+            <div class="log-table">
+                <div class="log-row">
+                    <span class="log-label">FRAG_01 (IMG)</span>
+                    <span class="log-value">{{ parts[0] }}</span>
+                </div>
+                <div class="log-row">
+                    <span class="log-label">FRAG_02 (AUD)</span>
+                    <span class="log-value">{{ parts[1] }}</span>
+                </div>
+                <div class="log-row">
+                    <span class="log-label">FRAG_03 (ZIP)</span>
+                    <span class="log-value">{{ parts[2] }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

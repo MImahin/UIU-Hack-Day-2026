@@ -1,0 +1,139 @@
+/* --- DECODE PAGE STYLES --- */
+.decode-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #050505;
+    border: 1px solid #1a1a1a;
+    padding: 40px;
+}
+
+.terminal-header {
+    border-bottom: 2px solid var(--deep);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--neon);
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+}
+
+.instruction-text {
+    font-size: 0.75rem;
+    color: #444;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Upload Slots */
+.input-grid {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.upload-slot {
+    background: #0a0a0c;
+    border: 1px solid #1a1a1a;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.upload-slot:hover {
+    border-color: var(--dim-blue);
+}
+
+.upload-slot label {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--neon);
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+input[type="file"] {
+    font-family: 'Share Tech Mono', monospace;
+    color: #8b949e;
+    font-size: 0.8rem;
+}
+
+/* Execute Button */
+.execute-btn {
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    border: 1px solid var(--neon);
+    color: var(--neon);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.execute-btn:hover {
+    background: var(--neon);
+    color: #000;
+    box-shadow: 0 0 30px var(--neon);
+}
+
+/* Result Area */
+.result-container {
+    margin-top: 50px;
+    border: 1px solid var(--deep);
+    background: #020202;
+    padding: 30px;
+}
+
+.output-header {
+    color: #0f0; /* Success green */
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.secret-display {
+    font-size: 2rem;
+    color: #fff;
+    padding: 20px;
+    background: #0a0a0c;
+    border-left: 4px solid var(--neon);
+    margin-bottom: 30px;
+    word-break: break-all;
+}
+
+/* Log Table */
+.breakdown-title {
+    font-size: 0.7rem;
+    color: #555;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.log-table {
+    border-top: 1px solid #1a1a1a;
+}
+
+.log-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #1a1a1a;
+    font-size: 0.85rem;
+}
+
+.log-label {
+    color: var(--neon);
+    width: 150px;
+}
+
+.log-value {
+    color: #8b949e;
+    flex: 1;
+    text-align: right;
+}

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block page_css %}<link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">{% endblock %}
+
+{% block content %}
+<div class="result-wrapper">
+    <div class="terminal-header">
+        <h2 class="title">ENCODE_SEQUENCE_COMPLETE</h2>
+        <div class="status-bar">
+            <span class="status-node">FOLDER: {{ folder }}</span>
+            <span class="status-node">FRAGMENTS: 03/03</span>
+        </div>
+    </div>
+
+    <div class="vector-grid">
+        <div class="vector-card">
+            <div class="vector-meta">VECTOR_01 // VISUAL</div>
+            <h3 class="vector-label">CHAOTIC_IMAGE_DATA</h3>
+            <p class="path-display">{{ img_file }}</p> 
+            <a href="{{ url_for('download_file', filename=img_file) }}" class="download-link">INITIATE_DOWNLOAD</a>
+        </div>
+
+        <div class="vector-card">
+            <div class="vector-meta">VECTOR_02 // ACOUSTIC</div>
+            <h3 class="vector-label">HF_AUDIO_STREAM</h3>
+            <p class="path-display">{{ aud_file }}</p>
+            <a href="{{ url_for('download_file', filename=aud_file) }}" class="download-link">INITIATE_DOWNLOAD</a>
+        </div>
+
+        <div class="vector-card">
+            <div class="vector-meta">VECTOR_03 // ARCHIVE</div>
+            <h3 class="vector-label">SOURCE_CODE_BUNDLE</h3>
+            <p class="path-display">{{ zip_file }}</p>
+            <a href="{{ url_for('download_file', filename=zip_file) }}" class="download-link">INITIATE_DOWNLOAD</a>
+        </div>
+    </div>
+    
+    <div class="action-footer">
+        <a href="/encode" class="return-btn">RETURN_TO_ENCRYPTION_VECT</a>
+    </div>
+</div>
+{% endblock %}

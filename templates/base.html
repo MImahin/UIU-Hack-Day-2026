@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhostVector | Stego-Suite</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+    {% block page_css %}{% endblock %}
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <h1 class="logo">GHOSTVECTOR</h1>
+            <p class="tagline">Distributed Stealth Architecture & Multi-Vector Steganography</p>
+        </div>
+        
+        <div class="nav-center">
+            <a href="/" class="nav-link">SYSTEM_HOME</a>
+            <a href="/encode" class="nav-link">ENCODE_VECTOR</a>
+            <a href="/decode" class="nav-link">DECODE_VECTOR</a>
+        </div>
+
+        <div class="nav-right"></div>
+    </nav>
+
+    <div class="content-wrapper">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-line"></div>
+        <div class="footer-text">
+            <span>TERMINAL_STATUS: <span class="online">ONLINE</span></span>
+            <span class="team">PROJECT: <span class="neon-blue">KALA BHUNA</span></span>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.hero { display: flex; justify-content: center; align-items: center; height: 60vh; }
+.glitch-box { text-align: center; }
+.glitch-box h2 { letter-spacing: 5px; color: #333; margin-bottom: 40px; }
+
+.mode-selector { display: flex; gap: 30px; }
+
+.mode-card {
+    background: #0a0a0c;
+    border: 1px solid #1a1a1a;
+    padding: 40px;
+    width: 250px;
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+    position: relative;
+}
+
+.mode-card:hover {
+    border-color: #00f2ff;
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.mode-card .icon { font-size: 3rem; margin-bottom: 20px; }
+.mode-card h3 { color: #00f2ff; margin-bottom: 10px; }
+.mode-card p { font-size: 0.8rem; color: #777; }

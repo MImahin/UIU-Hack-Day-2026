@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Project Specific
+uploads/
+!uploads/music/
+.DS_Store

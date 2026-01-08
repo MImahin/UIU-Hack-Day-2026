@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block page_css %}<link rel="stylesheet" href="{{ url_for('static', filename='encode.css') }}">{% endblock %}
+
+{% block content %}
+<div class="encode-wrapper">
+    <div class="terminal-header">
+        <h2 class="title">ENCRYPTION_VECT_INIT</h2>
+        <div class="status-bar">
+            <span class="status-node">SYSTEM: READY</span>
+            <span class="status-node">SEC_LEVEL: ALPHA</span>
+        </div>
+    </div>
+
+    <form method="POST" class="encode-form">
+        <div class="input-group">
+            <label for="folder_name">IDENT_FOLDER_NAME</label>
+            <input type="text" id="folder_name" name="folder_name" placeholder="TARGET_DIRECTORY_IDENTIFIER" required>
+            <div class="input-line"></div>
+        </div>
+
+        <div class="input-group">
+            <label for="message">SECRET_PAYLOAD_DATA</label>
+            <textarea id="message" name="message" rows="8" placeholder="INPUT_SENSITIVE_STRING_HERE..." required></textarea>
+            <div class="input-line"></div>
+        </div>
+
+        <div class="action-area">
+            <button type="submit" class="execute-btn">
+                <span class="btn-text">EXECUTE_ENCODE_SEQUENCE</span>
+                <span class="btn-glitch"></span>
+            </button>
+        </div>
+    </form>
+    
+    {% if error %}
+    <div class="error-msg">
+        [!] SYSTEM_ERROR: {{ error }}
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
