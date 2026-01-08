@@ -1,6 +1,13 @@
 # GHOSTVECTOR: Distributed Stealth Architecture
 ### **Multi-Vector Steganography Suite**
-**Developed for UIU Hackday 2026** **Team Name: KALA BHUNA**
+**Developed for UIU Hackday 2026** | **Team Name: KALA BHUNA**
+
+---
+
+## 📺 Demo Video
+**Watch the system in action:** [Project Demo Link Here](https://github.com/MImahin/UIU-Hack-Day-2025)
+
+> **✨ Special Note:** Almost every line of code, the architectural modularity, and the high-frequency acoustic logic in this project was generated via **Vibe Coding** in collaboration with **Gemini**.
 
 ---
 
