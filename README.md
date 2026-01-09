@@ -4,10 +4,10 @@
 
 ---
 
-## 📺 Demo Video
+## Demo Video
 **Watch the system in action:** [Project Demo Link Here](https://drive.google.com/drive/folders/1ejWwTqwOR-5t9CIeEpr5XXfFy83xghAT)
 
-> **✨ Special Note:** Almost every line of code, the architectural modularity, and the high-frequency acoustic logic in this project was generated via **Vibe Coding** in collaboration with **Gemini**.
+> ** Special Note:** Almost every line of code, the architectural modularity, and the high-frequency acoustic logic in this project was generated via **Vibe Coding** in collaboration with **Gemini**.
 
 ---
 
@@ -16,7 +16,7 @@ GhostVector is a high-security steganography application designed to hide sensit
 
 ---
 
-## 🛡️ The Triple-Vector Logic
+##  The Triple-Vector Logic
 The system automatically splits the input message into three mathematically equal fragments and embeds them into the following:
 
 ### 1. Visual Vector (Image)
@@ -33,7 +33,7 @@ The system automatically splits the input message into three mathematically equa
 
 ---
 
-## 🚀 Installation & Usage
+##  Installation & Usage
 
 ### 1. Prerequisites
 Ensure you have Python 3.9+ installed.
