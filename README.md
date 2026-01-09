@@ -11,7 +11,7 @@
 
 ---
 
-## 🛠️ Overview
+## Overview
 GhostVector is a high-security steganography application designed to hide sensitive information by fragmenting it across three different digital mediums (Vectors). Unlike standard encryption, GhostVector focuses on **deniability** and **invisibility**. By splitting a secret into three parts, the message remains unrecoverable even if one or two files are intercepted.
 
 ---
